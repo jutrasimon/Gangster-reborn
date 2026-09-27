@@ -1,5 +1,7 @@
 # Référence originale
 
+> Mise à jour 0.2 : la V1 solo contre bot est implémentée. Les règles jouables, leurs valeurs et leurs limites sont dans [Prototype 0.2](11-prototype-v02.md). Les éléments exploratoires ci-dessous restent utiles pour les prochaines itérations; ils ne décrivent plus tous l’état actuel du code.
+
 ## Périmètre de connaissance
 
 Lecture documentaire du manuel, de critiques et d'un récit de partie. Aucun test pratique du jeu effectué ici. Les probabilités, comportements limites et différences de versions restent à vérifier. Les sources ci-dessous sont des pistes de référence, pas une autorisation à copier leurs textes ou assets.

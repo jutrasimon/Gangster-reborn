@@ -1,5 +1,7 @@
 # Systèmes et interactions
 
+> Mise à jour 0.2 : la V1 solo contre bot est implémentée. Les règles jouables, leurs valeurs et leurs limites sont dans [Prototype 0.2](11-prototype-v02.md). Les éléments exploratoires ci-dessous restent utiles pour les prochaines itérations; ils ne décrivent plus tous l’état actuel du code.
+
 Cette matrice est un plan de déconstruction, pas une liste de mécaniques adoptées.
 
 | ID | Système | Décision à examiner | Dépendances | État |

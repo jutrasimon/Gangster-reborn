@@ -1,5 +1,7 @@
 # Écrans et expérience
 
+> Mise à jour 0.2 : la V1 solo contre bot est implémentée. Les règles jouables, leurs valeurs et leurs limites sont dans [Prototype 0.2](11-prototype-v02.md). Les éléments exploratoires ci-dessous restent utiles pour les prochaines itérations; ils ne décrivent plus tous l’état actuel du code.
+
 Cartographie de travail à raffiner, pas une maquette validée.
 
 | Vue proposée | Ce que le joueur doit pouvoir faire | Information importante |

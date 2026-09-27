@@ -1,5 +1,7 @@
 # Journal des décisions
 
+> Mise à jour 0.2 : la V1 solo contre bot est implémentée. Les règles jouables, leurs valeurs et leurs limites sont dans [Prototype 0.2](11-prototype-v02.md). Les éléments exploratoires ci-dessous restent utiles pour les prochaines itérations; ils ne décrivent plus tous l’état actuel du code.
+
 Date initiale : 2026-09-27, heure de Toronto. Source des validations : conversation de conception avec Simon.
 
 | ID | Statut | Décision / piste | Conséquence |
@@ -31,3 +33,10 @@ Date initiale : 2026-09-27, heure de Toronto. Source des validations : conversat
 ## Corrections de méthode
 
 Ne pas confondre une explication abstraite de la décision avec une boucle jouable. Ne pas utiliser une règle de contrôle de quartiers inventée pour expliquer le jeu original. Ne pas confondre argent et points de victoire. Une référence documentée n'est pas une validation de transposition.
+
+## Décisions du 27 septembre 2026 — prototype
+
+- D007 VALIDÉ : Simon demande la version complète initiale, puis ajustements; pas de multijoueur humain pour le moment, le second joueur est un bot. Remplace le périmètre initial de D002 pour cette V1.
+- D008 IMPLÉMENTÉ — HYPOTHÈSE : règles et valeurs de docs/11-prototype-v02.md choisies pour rendre la version jouable. Elles restent révisables après essai.
+- D009 IMPLÉMENTÉ : carte 6 quartiers / 18 établissements, 12 actions, 4 compétences, 16 personnages dont 6 candidats, armes/voitures, bot, économie, pression, sauvegarde locale, victoire et rejeu.
+- D010 IMPLÉMENTÉ : JavaScript ESM statique, sans backend de gameplay; publication Sites privée et code GitHub.

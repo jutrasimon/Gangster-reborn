@@ -1,8 +1,14 @@
 # Gangster — Bible du projet
 
-Version 0.1 · 27 septembre 2026 · Conception, aucun gameplay implémenté.
+Version 0.2 · 27 septembre 2026 · Prototype solo jouable contre un bot.
 
 Un duel de succession criminelle inspiré de Gangsters: Organized Crime. Le parrain est mort; deux prétendants cherchent à reprendre son empire. Navigateur, mobile first, partie cible d'environ une heure.
+
+## Version jouable
+
+La V1 est décrite dans [les règles implémentées](docs/11-prototype-v02.md). Les chiffres et catalogues exhaustifs du prototype se trouvent dans [data/prototype-v02.json](data/prototype-v02.json), exportés de `dist/engine.js` via `node scripts/export-design.mjs`.
+
+Local : `npm run serve`, puis ouvrir le port 8000. Tests : `npm test`. Code statique dans `dist/`, sans compilation ni dépendances.
 
 ## Lire la documentation
 
@@ -28,11 +34,11 @@ Un duel de succession criminelle inspiré de Gangsters: Organized Crime. Le parr
 - À VÉRIFIER : assertion nécessitant une vérification supplémentaire.
 - IMPLÉMENTÉ : réservé à un comportement réellement présent dans le code.
 
-Les JSON dans data/ sont des catalogues de conception, pas des données de jeu prêtes à exécuter. Une valeur null signifie inconnue, jamais zéro. Cette première version couvre les domaines à documenter; elle ne prétend pas contenir des règles finales ni l'inventaire exhaustif de l'original.
+`data/catalogues.json` conserve le catalogue exploratoire de la version 0.1. `data/prototype-v02.json` décrit les données effectivement implémentées. Une valeur null signifie inconnue, jamais zéro. Les règles du prototype ne sont pas finales et ne constituent pas un inventaire exhaustif de l’original.
 
 ## Prochain travail
 
-Définir précisément bâtiment, bloc, quartier et contrôle, en partant de l'original. Puis comparer ses conditions de victoire à notre succession. Aucun moteur, carte finale ou nombre de manches n'est choisi.
+Tester la V1 avec Simon : lisibilité de la carte, intérêt des affectations, rythme, agressivité du bot et plaisir des interactions. Les choix de prototype sont révisables.
 
 ## Git
 

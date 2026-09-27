@@ -1,5 +1,7 @@
 # Objets, ressources et économie
 
+> Mise à jour 0.2 : la V1 solo contre bot est implémentée. Les règles jouables, leurs valeurs et leurs limites sont dans [Prototype 0.2](11-prototype-v02.md). Les éléments exploratoires ci-dessous restent utiles pour les prochaines itérations; ils ne décrivent plus tous l’état actuel du code.
+
 ## Ressources à distinguer
 
 Temps disponible, personnages, argent, territoire, équipement, information. Un territoire n'est pas automatiquement une monnaie; une ressource possédée n'est pas automatiquement disponible.

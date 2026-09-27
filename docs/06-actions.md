@@ -1,5 +1,7 @@
 # Actions et résolution
 
+> Mise à jour 0.2 : la V1 solo contre bot est implémentée. Les règles jouables, leurs valeurs et leurs limites sont dans [Prototype 0.2](11-prototype-v02.md). Les éléments exploratoires ci-dessous restent utiles pour les prochaines itérations; ils ne décrivent plus tous l’état actuel du code.
+
 ## Structure de chaque fiche
 
 ID; libellé visible; statut; acteur; cible; conditions; coût; disponibilité mobilisée; durée; choix de moyens; résolution; succès; échec; interruption; effets secondaires; information révélée; défense adverse; bilan affiché; liens aux systèmes.

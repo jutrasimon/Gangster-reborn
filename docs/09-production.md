@@ -1,5 +1,7 @@
 # Direction artistique et technique
 
+> Mise à jour 0.2 : la V1 solo contre bot est implémentée. Les règles jouables, leurs valeurs et leurs limites sont dans [Prototype 0.2](11-prototype-v02.md). Les éléments exploratoires ci-dessous restent utiles pour les prochaines itérations; ils ne décrivent plus tous l’état actuel du code.
+
 ## Statut
 
 Aucun moteur, framework, serveur, hébergeur, format de carte ou style graphique choisi. Aucun site public créé. La cible navigateur/mobile est validée.
