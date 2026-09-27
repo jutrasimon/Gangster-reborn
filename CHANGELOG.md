@@ -1,5 +1,11 @@
 # Historique
 
+## Correctif gym UI — 2026-09-27
+
+- Canevas et textes adaptés aux écrans haute densité, plafond ×3.
+- Mise en page et coordonnées tactiles conservées; carte non modifiée.
+- Version du bundle actualisée pour éviter de garder l’ancien script en cache.
+
 ## Gyms Phaser 0.1 — 2026-09-27
 
 - Phaser 4.2.1 retenu; dépendances et compilation TypeScript ajoutées.

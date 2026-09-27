@@ -2,11 +2,15 @@ import Phaser from 'phaser';
 import {UIScene,uiState} from './ui-scene';
 import {MapScene,mapState} from './map-scene';
 import {Lot,lots} from './iso';
+import {density,bufferSize} from './display';
 const stage=document.querySelector<HTMLElement>('#stage')!,tools=document.querySelector<HTMLElement>('#tools')!;
 let current:'ui'|'iso'=location.hash==='#iso'?'iso':'ui';
-const game=new Phaser.Game({type:Phaser.AUTO,parent:stage,backgroundColor:'#17232c',scale:{mode:Phaser.Scale.RESIZE,width:stage.clientWidth,height:stage.clientHeight},input:{activePointers:2},render:{antialias:true,roundPixels:false},scene:[],audio:{noAudio:true}});
+const initialDensity=current==='ui'?density():1;
+const initialSize=bufferSize(stage.clientWidth,stage.clientHeight,initialDensity);
+const game=new Phaser.Game({type:Phaser.AUTO,parent:stage,backgroundColor:'#17232c',scale:{mode:Phaser.Scale.NONE,width:initialSize.width,height:initialSize.height,zoom:1/initialDensity},input:{activePointers:2},render:{antialias:true,roundPixels:false},scene:[],audio:{noAudio:true}});
 let ready=false;
 function note(value:string){document.querySelector('#announce')!.textContent=value;document.querySelector('#hint')!.textContent=value;}
+function resizeCanvas(){const d=current==='ui'?density():1;const size=bufferSize(stage.clientWidth,stage.clientHeight,d);game.scale.setZoom(1/d);game.scale.resize(size.width,size.height);}
 function drawUI(){if(ready&&game.scene.isActive('ui'))(game.scene.getScene('ui') as UIScene).draw();}
 function applyMap(){if(ready&&game.scene.isActive('iso'))(game.scene.getScene('iso') as MapScene).apply();}
 function check(id:string,label:string,value:boolean){return `<label for="${id}">${label}<input id="${id}" type="checkbox" ${value?'checked':''}></label>`;}
@@ -24,14 +28,15 @@ function renderTools(){tools.innerHTML=current==='ui'?`<h2>Composants d’interf
 }
 function zoomChanged(z:number){const out=document.querySelector('#zoom-value'),slider=document.querySelector<HTMLInputElement>('#zoom');if(out)out.textContent=Math.round(z*100)+' %';if(slider)slider.value=String(z*100);}
 function lotChanged(l:Lot|null){const el=document.querySelector('#lot-info');if(el)el.innerHTML=l?`<strong>${l.name}</strong>Case ${l.x}, ${l.y} · ${mapState.floors?l.floors:1} étage(s)<br>Identifiant : ${l.id}<br>Donnée de test, sans activité économique.`:'Touche un bâtiment pour l’inspecter.';const sel=document.querySelector<HTMLSelectElement>('#lot-select');if(sel)sel.value=l?.id||'';if(l)note(`${l.name} · case ${l.x}, ${l.y}`);}
-function switchGym(id:'ui'|'iso'){current=id;location.hash=id;document.querySelectorAll<HTMLButtonElement>('[data-gym]').forEach(b=>{b.classList.toggle('active',b.dataset.gym===id);b.setAttribute('aria-pressed',String(b.dataset.gym===id));});document.querySelector('#title')!.textContent=id==='ui'?'Interface de gestion':'Carte isométrique';document.querySelector('#eyebrow')!.textContent=id==='ui'?'GYM 01 / COMPOSANTS':'GYM 02 / VILLE';note(id==='ui'?'Choisis un dossier pour tester la sélection.':'Glisse pour explorer · pince pour zoomer · touche un bâtiment.');renderTools();if(ready){game.scene.stop(id==='ui'?'iso':'ui');game.scene.start(id);}}
+function switchGym(id:'ui'|'iso'){current=id;location.hash=id;document.querySelectorAll<HTMLButtonElement>('[data-gym]').forEach(b=>{b.classList.toggle('active',b.dataset.gym===id);b.setAttribute('aria-pressed',String(b.dataset.gym===id));});document.querySelector('#title')!.textContent=id==='ui'?'Interface de gestion':'Carte isométrique';document.querySelector('#eyebrow')!.textContent=id==='ui'?'GYM 01 / COMPOSANTS':'GYM 02 / VILLE';note(id==='ui'?'Choisis un dossier pour tester la sélection.':'Glisse pour explorer · pince pour zoomer · touche un bâtiment.');renderTools();if(ready){game.scene.stop(id==='ui'?'iso':'ui');resizeCanvas();game.scene.start(id);}}
 game.events.once(Phaser.Core.Events.READY,()=>{game.scene.add('ui',UIScene);game.scene.add('iso',MapScene);ready=true;game.scene.start(current);document.querySelector('#loading')?.remove();});
 game.events.on('zoom',zoomChanged);game.events.on('lot',lotChanged);game.events.on('selection',(s:string)=>{note(s);const select=document.querySelector<HTMLSelectElement>('#person');if(select)select.value=String(uiState.selected);});
 document.querySelectorAll<HTMLButtonElement>('[data-gym]').forEach(b=>b.addEventListener('click',()=>switchGym(b.dataset.gym as 'ui'|'iso')));
 document.querySelector('#tools-toggle')!.addEventListener('click',()=>{const open=tools.classList.toggle('open');document.querySelector('#tools-toggle')!.setAttribute('aria-expanded',String(open));});
 document.querySelector('#reset')!.addEventListener('click',()=>{if(current==='ui'){Object.assign(uiState,{theme:'night',large:false,selected:0,disabled:false,busy:false,modal:false,toast:'',tab:0});drawUI();}else{Object.assign(mapState,{grid:false,labels:false,buildings:true,xray:false,floors:true,selected:null,plan:false});const s=game.scene.getScene('iso') as MapScene;s.highlight.clear();s.selectionLabel.setVisible(false);s.fit();s.apply();}renderTools();note('Gym réinitialisé.');});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){uiState.modal=false;drawUI();tools.classList.remove('open');document.querySelector('#tools-toggle')!.setAttribute('aria-expanded','false');}});
+window.addEventListener('resize',()=>{if(ready)resizeCanvas();});
 window.addEventListener('hashchange',()=>{const id=location.hash==='#iso'?'iso':'ui';if(id!==current)switchGym(id);});
-const observer=new ResizeObserver(()=>{if(ready)game.scale.resize(stage.clientWidth,stage.clientHeight);});observer.observe(stage);
+const observer=new ResizeObserver(()=>{if(ready)resizeCanvas();});observer.observe(stage);
 setInterval(()=>{if(ready)document.querySelector('#metrics')!.textContent=`${Math.round(game.loop.actualFps)} FPS · ${stage.clientWidth} × ${stage.clientHeight}`;},700);
 switchGym(current);

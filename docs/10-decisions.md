@@ -52,3 +52,5 @@ Ne pas confondre une explication abstraite de la décision avec une boucle jouab
 
 - D015 VALIDÉ : Simon choisit Phaser et demande de commencer par des gyms UI et carte isométrique, à bonifier et autour desquels construire. Remplace le statut de simple recommandation de D014. Le banc complet T01 ne précède plus ces premiers gyms.
 - D016 IMPLÉMENTÉ : deux scènes indépendantes dans gyms/, contrôles de test, carte isométrique à tuiles provisoires CC0 et composants UI Phaser. Ni simulation de semaine, ni règles économiques, ni bot dans ces gyms. Leur existence ne valide pas leur DA finale.
+
+- D017 CORRECTION IMPLÉMENTÉE : après capture de Simon, rendu haute densité du gym UI (tampon et textes, plafond ×3), sans changement de dimensions visuelles ni de règles. Validation sur téléphone encore à faire.

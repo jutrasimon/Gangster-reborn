@@ -51,3 +51,7 @@ Le choix antérieur d’une UI HTML/CSS pour le produit n’est pas figé : ce g
 ## Build et publication
 
 Phaser 4.2.1 et outils verrouillés par package-lock.json. `npm ci`, `npm run check:gyms`, `node --test tests/iso.test.mjs`, `npm run build:gyms`. Les sources sont dans gyms/; dist/gyms/ est généré. Hébergement statique existant conservé, ancien prototype à la racine. Aucun changement aux règles de l’ancien jeu.
+
+## Correctif netteté mobile — 27 septembre 2026
+
+Après capture de Simon montrant le Canvas flou par rapport au HTML, le gym UI utilise un tampon adapté au devicePixelRatio (plafond ×3), des textures de texte à la même densité et une caméra compensée. Mise en page et glissement des fenêtres restent en pixels CSS; les entrées passent par le Scale Manager. Redimensionnement et changement de gym recalculent les dimensions. La carte garde son rendu ×1 pour ne pas augmenter son coût GPU dans ce correctif ciblé. Le code Phaser 4.2.1 installé ne propose pas de résolution globale GameConfig : utiliser Scale.NONE, taille du tampon et zoom CSS inverse. Validation de types et des conversions; netteté et gestes à confirmer sur le téléphone réel.
