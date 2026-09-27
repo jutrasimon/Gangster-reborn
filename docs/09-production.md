@@ -31,4 +31,4 @@ Carte limitée, quelques personnages, un revenu, une opération adverse et une c
 
 ## Prochain travail
 
-Le choix technique précède les nouvelles boucles. Critères et banc d’essai : [démarche actuelle](12-reconstruction.md). Aucun nouveau moteur recommandé ou retenu à ce stade.
+Le choix technique précède les nouvelles boucles. Critères et banc d’essai : [démarche actuelle](12-reconstruction.md). [Étude technique](13-choix-technique.md) : Phaser 4 + TypeScript recommandé pour un banc d’essai; pas encore retenu définitivement.

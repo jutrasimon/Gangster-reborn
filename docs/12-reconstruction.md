@@ -49,4 +49,4 @@ Restent notamment à établir précisément : allocation et estimation du temps,
 
 À chaque étape, mettre à jour le chapitre concerné, les données associées, le journal de décisions et le changelog dans le même commit. Mentionner les sources et les limites de validation. Le code prouve ce qui existe, pas ce que Simon a accepté ni ce que faisait le jeu original.
 
-Prochaine livraison : comparaison technique argumentée et proposition de banc d’essai. Aucun changement de gameplay ou redéploiement n’est inclus dans cette réorientation documentaire.
+Comparaison disponible : [choix technique et banc T01](13-choix-technique.md). Phaser est recommandé comme candidat, sans résultat de banc d’essai. Aucun changement de gameplay ou redéploiement n’est inclus dans cette réorientation documentaire.

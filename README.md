@@ -41,9 +41,13 @@ Local : `npm run serve`, puis ouvrir le port 8000. Tests : `npm test`. Code stat
 
 `data/catalogues.json` conserve le catalogue exploratoire de la version 0.1. `data/prototype-v02.json` décrit les données effectivement implémentées. Une valeur null signifie inconnue, jamais zéro. Les règles du prototype ne sont pas finales et ne constituent pas un inventaire exhaustif de l’original.
 
+## Étude technique
+
+[Comparaison des moteurs et banc d’essai T01](docs/13-choix-technique.md) : Phaser 4 + TypeScript recommandé pour essai; performances et fidélité visuelle non validées.
+
 ## Prochain travail
 
-Comparer les technologies sur les besoins de simulation et de rendu de l’original, puis réaliser un banc d’essai technique limité. Aucun moteur choisi. Construire ensuite une boucle à la fois avec sa documentation et ses critères de validation.
+Construire le banc d’essai technique T01 proposé pour vérifier Phaser, le temps, les trajets et la lisibilité mobile. Aucun moteur adopté définitivement. Construire ensuite une boucle à la fois avec sa documentation et ses critères de validation.
 
 ## Git
 

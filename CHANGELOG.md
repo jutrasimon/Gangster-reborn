@@ -1,5 +1,11 @@
 # Historique
 
+## Étude technique — 2026-09-27
+
+- Comparaison sourcée de Phaser, PixiJS et Godot; recommandation Phaser pour essai.
+- Architecture de simulation séparée et banc T01 documentés, avec critères et mesures encore à faire.
+- Aucun changement au code ou au jeu publié.
+
 ## Documentation 0.3 — 2026-09-27
 
 - V1 écartée comme référence de conception; code et règles conservés pour historique.
