@@ -1,6 +1,6 @@
 # Choix technique — comparaison et banc d’essai
 
-27 septembre 2026. **RECOMMANDATION TECHNIQUE, PAS ENCORE VALIDÉE PAR UN BANC D’ESSAI.**
+27 septembre 2026. **PHASER RETENU PAR SIMON — D015.** Cette étude conserve la recommandation initiale. Première réalisation : [gyms UI et carte](14-gyms-phaser.md), sans validation complète du banc T01.
 
 ## Recommandation
 

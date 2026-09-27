@@ -49,3 +49,6 @@ Ne pas confondre une explication abstraite de la décision avec une boucle jouab
 
 - D014 RECOMMANDATION TECHNIQUE : après comparaison des documentations officielles, proposer Phaser 4 + TypeScript, rendu isométrique 2D, interface HTML/CSS et simulation indépendante. Tiled proposé pour les cartes. Voir docs/13-choix-technique.md. Ni validation par Simon, ni résultat de benchmark à ce stade.
 - P006 PROPOSITION : banc T01 consacré au temps, aux trajets, aux véhicules, à la sauvegarde et à la lisibilité mobile. Ses quantités et seuils sont techniques, pas des règles du jeu.
+
+- D015 VALIDÉ : Simon choisit Phaser et demande de commencer par des gyms UI et carte isométrique, à bonifier et autour desquels construire. Remplace le statut de simple recommandation de D014. Le banc complet T01 ne précède plus ces premiers gyms.
+- D016 IMPLÉMENTÉ : deux scènes indépendantes dans gyms/, contrôles de test, carte isométrique à tuiles provisoires CC0 et composants UI Phaser. Ni simulation de semaine, ni règles économiques, ni bot dans ces gyms. Leur existence ne valide pas leur DA finale.

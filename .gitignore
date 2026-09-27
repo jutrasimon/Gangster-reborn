@@ -6,3 +6,6 @@ __pycache__/
 *.bundle
 
 .sites-runtime/
+
+# Gyms: generated static output
+dist/gyms/

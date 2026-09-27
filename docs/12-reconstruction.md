@@ -1,6 +1,6 @@
 # Reconstruction — technologie puis boucles
 
-27 septembre 2026. Démarche VALIDÉE par Simon; technologie et séquence de boucles À DÉFINIR.
+27 septembre 2026. Démarche VALIDÉE par Simon; Phaser choisi ensuite par D015; commencer par les gyms UI et carte. La séquence des boucles de jeu reste à définir.
 
 ## Ce qui change
 
@@ -50,3 +50,7 @@ Restent notamment à établir précisément : allocation et estimation du temps,
 À chaque étape, mettre à jour le chapitre concerné, les données associées, le journal de décisions et le changelog dans le même commit. Mentionner les sources et les limites de validation. Le code prouve ce qui existe, pas ce que Simon a accepté ni ce que faisait le jeu original.
 
 Comparaison disponible : [choix technique et banc T01](13-choix-technique.md). Phaser est recommandé comme candidat, sans résultat de banc d’essai. Aucun changement de gameplay ou redéploiement n’est inclus dans cette réorientation documentaire.
+
+## Suite validée — D015
+
+Commencer par les gyms Phaser UI et carte isométrique, puis les bonifier et construire autour. Voir [leur état actuel](14-gyms-phaser.md). T01 demeure une proposition de futur banc de simulation.

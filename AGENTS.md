@@ -19,3 +19,7 @@ Les anciens catalogues et docs/11-prototype-v02.md sont historiques, pas des sp�
 Si l’ancien moteur est modifié, régénérer son export via node scripts/export-design.mjs. Ne pas éditer cet export à la main.
 La publication Sites utilise .openai/hosting.json; lire les compétences Sites avant de modifier/déployer le jeu. Une mise à jour documentaire seule ne demande pas de redéploiement du jeu.
 Dépôt de référence : jutrasimon/Gangster-reborn.
+
+## Gyms Phaser — D015
+
+Phaser est désormais choisi. Lire docs/14-gyms-phaser.md et gyms/README.md. Bonifier ces gyms et construire autour; ne pas démarrer la simulation complète par défaut. Sources dans gyms/, sortie générée dist/gyms/ ignorée. Avant publication après modification des gyms : npm run check:gyms et npm run build:gyms. Les données de test ne sont pas des règles de Gangsters.

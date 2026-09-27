@@ -1,5 +1,13 @@
 # Historique
 
+## Gyms Phaser 0.1 — 2026-09-27
+
+- Phaser 4.2.1 retenu; dépendances et compilation TypeScript ajoutées.
+- Gym UI : dossiers, onglets, fenêtre déplaçable, palettes et états de test.
+- Gym carte : tuiles isométriques, caméra, sélection, couches et inspecteur.
+- Assets Kenney CC0 provisoires; documentation des limites et des composants.
+- Ancien jeu conservé, gyms disponibles sous /gyms/.
+
 ## Étude technique — 2026-09-27
 
 - Comparaison sourcée de Phaser, PixiJS et Godot; recommandation Phaser pour essai.

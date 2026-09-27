@@ -8,11 +8,17 @@ Un duel de succession criminelle inspiré de Gangsters: Organized Crime. Le parr
 
 Lire [Reconstruction : technologie puis boucles](docs/12-reconstruction.md). La V1 a été écartée comme base de conception : elle abstrait le temps, les déplacements et l’exécution réelle qui font partie du cœur de Gangsters: Organized Crime. Le code est conservé pour historique; sa présence ne valide ni ses règles ni sa technologie.
 
+## Gyms Phaser — travail actuel
+
+[Documentation des gyms](docs/14-gyms-phaser.md) · [Sources](gyms/README.md).
+
+Deux scènes : interface et carte isométrique. `npm ci`, `npm run build:gyms`, puis `npm run serve` et ouvrir `/gyms/#ui` ou `/gyms/#iso`.
+
 ## Ancien prototype — conservé pour historique
 
 La V1 est décrite dans [les règles implémentées](docs/11-prototype-v02.md). Les chiffres et catalogues exhaustifs du prototype se trouvent dans [data/prototype-v02.json](data/prototype-v02.json), exportés de `dist/engine.js` via `node scripts/export-design.mjs`.
 
-Local : `npm run serve`, puis ouvrir le port 8000. Tests : `npm test`. Code statique dans `dist/`, sans compilation ni dépendances.
+Local : `npm run serve`, puis ouvrir le port 8000. Tests : `npm test`. Ancien code statique dans `dist/`; les gyms ont leurs sources TypeScript et leur compilation.
 
 ## Lire la documentation
 
@@ -43,11 +49,11 @@ Local : `npm run serve`, puis ouvrir le port 8000. Tests : `npm test`. Code stat
 
 ## Étude technique
 
-[Comparaison des moteurs et banc d’essai T01](docs/13-choix-technique.md) : Phaser 4 + TypeScript recommandé pour essai; performances et fidélité visuelle non validées.
+[Comparaison des moteurs et banc d’essai T01](docs/13-choix-technique.md) : Phaser choisi par Simon (D015); performances mobiles et fidélité visuelle non validées.
 
 ## Prochain travail
 
-Construire le banc d’essai technique T01 proposé pour vérifier Phaser, le temps, les trajets et la lisibilité mobile. Aucun moteur adopté définitivement. Construire ensuite une boucle à la fois avec sa documentation et ses critères de validation.
+Bonifier les gyms UI et carte isométrique. Construire autour de ces composants par étapes. Le banc de simulation T01 reste une proposition ultérieure.
 
 ## Git
 
