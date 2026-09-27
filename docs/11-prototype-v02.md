@@ -1,8 +1,9 @@
 # Prototype 0.2 — règles effectivement implémentées
 
-27 septembre 2026. Statut : IMPLÉMENTÉ — HYPOTHÈSES DE PROTOTYPE.
+> **Réorientation — 27 septembre 2026 :** ce chapitre conserve des éléments historiques ou exploratoires. Les règles de la V1 ne sont pas la cible du remake. Toute reprise doit être vérifiée contre l’original et validée boucle par boucle. Voir [la démarche actuelle](12-reconstruction.md).
+27 septembre 2026. Statut : ARCHIVE DU PROTOTYPE ÉCARTÉ COMME BASE DE CONCEPTION.
 
-Simon autorise une première version complète à ajuster après essai, sans multijoueur humain. Cette autorisation permet de choisir les valeurs provisoires nécessaires. Elle ne transforme pas ces valeurs en design définitif ni en règles originales de 1998.
+Simon autorise une première version complète à ajuster après essai, sans multijoueur humain. Cette autorisation a été interprétée trop largement lors du développement. Elle ne transforme pas ces valeurs en design définitif ni en règles originales de 1998.
 
 ## Jouer et reprendre
 

@@ -2,10 +2,10 @@
 
 ## Source de vérité
 
-- Règles retenues : docs/ et journal de décisions.
+- Démarche actuelle : docs/12-reconstruction.md et décisions D011–D013. Les chapitres antérieurs sont à réviser, pas automatiquement retenus.
 - Valeurs de réglage futures : data/, référencées par identifiant stable.
 - Référence historique : docs/02-original.md et ses sources, séparée des règles retenues.
-- Comportement réalisé : code et validation; actuellement aucun.
+- Comportement réalisé : ancien prototype dans dist/, documenté dans docs/11-prototype-v02.md. Conservé, mais écarté comme référence de conception.
 
 ## À chaque évolution
 
@@ -25,3 +25,7 @@ Identifiant; statut; objectif joueur; informations visibles; actions à l'écran
 ## Fiche de contenu
 
 Identifiant; nom; catégorie; statut; fonction; propriétés; valeurs et unités; acquisition; utilisation; restrictions; liens aux actions/systèmes; asset associé; source; version.
+
+## À chaque boucle
+
+Décrire un scénario concret à l’écran, son fonctionnement dans l’original et ses sources. Séparer adaptation proposée et validée. Fixer un critère observable, implémenter la boucle limitée, vérifier son comportement, consigner le résultat et les écarts. Mettre à jour règles, données, décisions et changelog dans le même commit. Ne pas annoncer une boucle validée sur la seule base de tests automatiques.

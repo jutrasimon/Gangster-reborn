@@ -1,5 +1,13 @@
 # Historique
 
+## Documentation 0.3 — 2026-09-27
+
+- V1 écartée comme référence de conception; code et règles conservés pour historique.
+- Nouvelle démarche : évaluation technique, banc d’essai, puis boucles successives documentées et validées.
+- Statuts corrigés dans tous les chapitres; instructions de travail et maintenance actualisées.
+- Aucun changement au jeu publié. Aucun moteur sélectionné.
+
+
 ## 0.2 — 2026-09-27
 
 - Première campagne solo complète contre Moretti, 8/16/24 semaines.

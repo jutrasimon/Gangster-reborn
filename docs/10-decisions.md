@@ -1,6 +1,6 @@
 # Journal des décisions
 
-> Mise à jour 0.2 : la V1 solo contre bot est implémentée. Les règles jouables, leurs valeurs et leurs limites sont dans [Prototype 0.2](11-prototype-v02.md). Les éléments exploratoires ci-dessous restent utiles pour les prochaines itérations; ils ne décrivent plus tous l’état actuel du code.
+> **Réorientation — 27 septembre 2026 :** ce chapitre conserve des éléments historiques ou exploratoires. Les règles de la V1 ne sont pas la cible du remake. Toute reprise doit être vérifiée contre l’original et validée boucle par boucle. Voir [la démarche actuelle](12-reconstruction.md).
 
 Date initiale : 2026-09-27, heure de Toronto. Source des validations : conversation de conception avec Simon.
 
@@ -18,7 +18,7 @@ Date initiale : 2026-09-27, heure de Toronto. Source des validations : conversat
 | P004 | PROPOSITION | Candidats présents dans la ville, disputés entre joueurs | Découverte/offres/conflits à définir |
 | P005 | PROPOSITION | Chaos distinct de la pression policière | Prémisse narrative ne valide pas une jauge |
 
-## Questions, dans l'ordre de travail proposé
+## Anciennes questions — ordre remplacé par D012
 
 1. Q001 : Que signifient exactement bâtiment, bloc, territoire et quartier dans l'original puis dans notre version?
 2. Q002 : Quelle condition de victoire sert la succession en une heure, en partant du multijoueur original?
@@ -40,3 +40,9 @@ Ne pas confondre une explication abstraite de la décision avec une boucle jouab
 - D008 IMPLÉMENTÉ — HYPOTHÈSE : règles et valeurs de docs/11-prototype-v02.md choisies pour rendre la version jouable. Elles restent révisables après essai.
 - D009 IMPLÉMENTÉ : carte 6 quartiers / 18 établissements, 12 actions, 4 compétences, 16 personnages dont 6 candidats, armes/voitures, bot, économie, pression, sauvegarde locale, victoire et rejeu.
 - D010 IMPLÉMENTÉ : JavaScript ESM statique, sans backend de gameplay; publication Sites privée et code GitHub.
+
+## Réorientation après essai — 27 septembre 2026
+
+- D011 VALIDÉ : la V1 et ses règles ne servent plus de référence. Simon constate que la simulation temporelle, les trajets, les équipements, la carte et les interfaces ne correspondent pas à l’expérience demandée. D008–D010 décrivent uniquement l’ancienne implémentation; ils ne justifient aucun choix futur.
+- D012 VALIDÉ : choisir d’abord une technologie capable de porter le jeu, puis construire boucle par boucle. Remplace la démarche de réalisation complète de D007; son périmètre solo contre bot est maintenu. Aucun moteur choisi et aucun ordre définitif de boucles approuvé.
+- D013 VALIDÉ : tenir la documentation à jour pendant chaque étape. Corriger les statuts existants; distinguer original vérifié, proposition, validation et implémentation. La durée cible et le mobile ne donnent pas permission de supprimer des systèmes de l’original.

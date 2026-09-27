@@ -9,8 +9,13 @@ Les mises à jour se font pendant le travail sur le projet; aucune surveillance 
 Ne pas lancer le développement complet avant la définition d'une tranche jouable. Documenter ce qui reste inconnu.
 Chaque système doit expliquer l'action à l'écran, le résultat, les interactions et le plaisir recherché. Éviter les suites de verbes abstraites.
 
-## Depuis la V1
+## Réorientation du 27 septembre 2026 — prioritaire
 
-Lire aussi docs/11-prototype-v02.md. Simon a autorisé la première version complète solo contre bot; ne pas traiter l’ancien préalable de tranche jouable comme un blocage. Le multijoueur humain reste hors périmètre actuel.
-Après chaque changement de règles ou contenu dans dist/engine.js, exécuter node scripts/export-design.mjs et mettre à jour la section de documentation correspondante. Ne pas éditer l’export à la main.
-La publication Sites utilise .openai/hosting.json; lire les compétences Sites avant de modifier/déployer. Le dépôt GitHub de référence reste jutrasimon/Gangster-reborn.
+Lire docs/12-reconstruction.md. La V1 est écartée comme base de conception. L’ancienne autorisation de construire une version complète ne justifie plus d’ajouter des systèmes ni d’inventer leurs règles.
+Choisir d’abord la technologie avec des critères concrets, puis construire et valider une boucle à la fois. Ne pas réduire la simulation pour s’adapter au moteur existant, au mobile ou à la durée cible sans décision explicite.
+Le second adversaire reste un bot. Aucun multijoueur humain à développer maintenant.
+Documenter au même moment : comportement original sourcé, adaptation proposée, comportement implémenté, différences et inconnues. Les tests du code ne prouvent pas sa fidélité au jeu original.
+Les anciens catalogues et docs/11-prototype-v02.md sont historiques, pas des spécifications à transposer.
+Si l’ancien moteur est modifié, régénérer son export via node scripts/export-design.mjs. Ne pas éditer cet export à la main.
+La publication Sites utilise .openai/hosting.json; lire les compétences Sites avant de modifier/déployer le jeu. Une mise à jour documentaire seule ne demande pas de redéploiement du jeu.
+Dépôt de référence : jutrasimon/Gangster-reborn.

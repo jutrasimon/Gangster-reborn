@@ -1,10 +1,10 @@
 # Direction artistique et technique
 
-> Mise à jour 0.2 : la V1 solo contre bot est implémentée. Les règles jouables, leurs valeurs et leurs limites sont dans [Prototype 0.2](11-prototype-v02.md). Les éléments exploratoires ci-dessous restent utiles pour les prochaines itérations; ils ne décrivent plus tous l’état actuel du code.
+> **Réorientation — 27 septembre 2026 :** ce chapitre conserve des éléments historiques ou exploratoires. Les règles de la V1 ne sont pas la cible du remake. Toute reprise doit être vérifiée contre l’original et validée boucle par boucle. Voir [la démarche actuelle](12-reconstruction.md).
 
 ## Statut
 
-Aucun moteur, framework, serveur, hébergeur, format de carte ou style graphique choisi. Aucun site public créé. La cible navigateur/mobile est validée.
+La V1 existante utilise JavaScript ESM statique et un hébergement Sites privé. Ce choix technique ne s’impose pas à la reconstruction. Le moteur et le rendu du futur jeu restent à choisir. La cible navigateur/mobile est conservée.
 
 ## Direction artistique à explorer
 
@@ -25,6 +25,10 @@ Catégories candidates : portraits, bâtiments, rues, véhicules, personnages su
 - Configuration des règles et version des données par partie.
 - Hébergement, coûts, déploiement et compatibilité navigateur.
 
-## Tranche jouable future — proposition
+## Ancienne proposition de tranche — écartée comme prochain travail
 
 Carte limitée, quelques personnages, un revenu, une opération adverse et une condition de fin provisoire. Mesurer d'abord la clarté des choix et des conséquences. Ne pas engager la production complète des assets avant cette validation.
+
+## Prochain travail
+
+Le choix technique précède les nouvelles boucles. Critères et banc d’essai : [démarche actuelle](12-reconstruction.md). Aucun nouveau moteur recommandé ou retenu à ce stade.

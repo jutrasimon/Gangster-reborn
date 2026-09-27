@@ -1,10 +1,14 @@
 # Gangster — Bible du projet
 
-Version 0.2 · 27 septembre 2026 · Prototype solo jouable contre un bot.
+Documentation 0.3 · 27 septembre 2026 · Reconstruction : choix technique, puis boucles successives.
 
 Un duel de succession criminelle inspiré de Gangsters: Organized Crime. Le parrain est mort; deux prétendants cherchent à reprendre son empire. Navigateur, mobile first, partie cible d'environ une heure.
 
-## Version jouable
+## Démarche actuelle
+
+Lire [Reconstruction : technologie puis boucles](docs/12-reconstruction.md). La V1 a été écartée comme base de conception : elle abstrait le temps, les déplacements et l’exécution réelle qui font partie du cœur de Gangsters: Organized Crime. Le code est conservé pour historique; sa présence ne valide ni ses règles ni sa technologie.
+
+## Ancien prototype — conservé pour historique
 
 La V1 est décrite dans [les règles implémentées](docs/11-prototype-v02.md). Les chiffres et catalogues exhaustifs du prototype se trouvent dans [data/prototype-v02.json](data/prototype-v02.json), exportés de `dist/engine.js` via `node scripts/export-design.mjs`.
 
@@ -32,13 +36,14 @@ Local : `npm run serve`, puis ouvrir le port 8000. Tests : `npm test`. Code stat
 - PROPOSITION : idée discutée, non acceptée.
 - À DÉFINIR : règle ou valeur absente.
 - À VÉRIFIER : assertion nécessitant une vérification supplémentaire.
-- IMPLÉMENTÉ : réservé à un comportement réellement présent dans le code.
+- ARCHIVÉ / ÉCARTÉ : conservé pour comprendre l’historique, sans autorité sur le futur jeu.
+- IMPLÉMENTÉ : ne signifie pas VALIDÉ; réservé à un comportement réellement présent dans le code.
 
 `data/catalogues.json` conserve le catalogue exploratoire de la version 0.1. `data/prototype-v02.json` décrit les données effectivement implémentées. Une valeur null signifie inconnue, jamais zéro. Les règles du prototype ne sont pas finales et ne constituent pas un inventaire exhaustif de l’original.
 
 ## Prochain travail
 
-Tester la V1 avec Simon : lisibilité de la carte, intérêt des affectations, rythme, agressivité du bot et plaisir des interactions. Les choix de prototype sont révisables.
+Comparer les technologies sur les besoins de simulation et de rendu de l’original, puis réaliser un banc d’essai technique limité. Aucun moteur choisi. Construire ensuite une boucle à la fois avec sa documentation et ses critères de validation.
 
 ## Git
 
