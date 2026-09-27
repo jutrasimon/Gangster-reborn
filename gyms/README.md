@@ -28,3 +28,9 @@ Le kit est provisoire et ne constitue pas la DA finale ni une reproduction des a
 ## Limites
 
 Pas de benchmark mobile réalisé. Le compteur FPS est une mesure instantanée du navigateur, pas une certification de performances. Interface Canvas partiellement accessible : les sélections sont aussi disponibles dans les réglages HTML, mais tous les composants Canvas n’ont pas encore leur équivalent clavier/lecteur d’écran. Le banc de simulation T01 reste à venir.
+
+## Gyms 0.3
+
+La carte principale est désormais un comparateur : iso rue, dessus, plan, ancienne miniature. `map-fixture.ts` contient six lieux, trois personnages et un trajet de référence. `map-legacy.ts` conserve l’ancien code pour référence; il n’est pas importé par le bundle. `map-scene.ts` rend les quatre modes.
+
+`ui-fixture.ts` contient les profils et valeurs de test; `ui-widgets.ts` contient jauges, compétences, secteurs et mini-carte. La fiche mobile défile dans la page, avec capture tactile spécifique à chaque gym. Carte haute densité ×2 maximum; UI ×3 maximum. Personnage `assets/person.webp` : illustration originale générée pour l’étalon de taille, pas un sprite animé ou une animation de marche.

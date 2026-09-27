@@ -54,3 +54,6 @@ Ne pas confondre une explication abstraite de la décision avec une boucle jouab
 - D016 IMPLÉMENTÉ : deux scènes indépendantes dans gyms/, contrôles de test, carte isométrique à tuiles provisoires CC0 et composants UI Phaser. Ni simulation de semaine, ni règles économiques, ni bot dans ces gyms. Leur existence ne valide pas leur DA finale.
 
 - D017 CORRECTION IMPLÉMENTÉE : après capture de Simon, rendu haute densité du gym UI (tampon et textes, plafond ×3), sans changement de dimensions visuelles ni de règles. Validation sur téléphone encore à faire.
+
+- D018 VALIDÉ / IMPLÉMENTÉ : comparer plusieurs représentations de carte avec personnages de référence, points d’intérêt et textes. Ajout de trois vues du même quartier de test (iso rue, dessus, plan) et conservation d’une ancienne miniature de référence. Échelle de jeu distincte de la vue d’ensemble; proportions réglables.
+- D019 VALIDÉ / IMPLÉMENTÉ : enrichir le gym UI avec fiches, statistiques, énergie, progression, secteurs d’action, mini-carte et dossiers. Valeurs et temps sont des fixtures réglables, pas une validation des systèmes de gameplay.

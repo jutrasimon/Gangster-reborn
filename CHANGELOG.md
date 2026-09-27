@@ -1,5 +1,14 @@
 # Historique
 
+## Gyms 0.3 — 2026-09-27
+
+- Comparateur iso rue / dessus / plan et ancienne carte de référence.
+- Personnages de référence, rues réglables, points d’intérêt, textes à taille écran et trajet témoin.
+- Rendu carte haute densité plafonné à ×2; vue rapprochée par défaut.
+- Fiches UI : compétences, énergie, expérience, action en secteurs, animation, mini-carte et dossiers.
+- Défilement natif des fiches mobiles; distinction glissement/toucher.
+- Données fictives séparées des widgets et des règles de jeu.
+
 ## Correctif gym UI — 2026-09-27
 
 - Canevas et textes adaptés aux écrans haute densité, plafond ×3.

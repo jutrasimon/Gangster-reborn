@@ -12,7 +12,7 @@ Lire [Reconstruction : technologie puis boucles](docs/12-reconstruction.md). La 
 
 [Documentation des gyms](docs/14-gyms-phaser.md) · [Sources](gyms/README.md).
 
-Deux scènes : interface et carte isométrique. `npm ci`, `npm run build:gyms`, puis `npm run serve` et ouvrir `/gyms/#ui` ou `/gyms/#iso`.
+Deux gyms : fiches de personnages enrichies et comparaison de cartes (iso rue, dessus, plan, ancienne référence). `npm ci`, `npm run build:gyms`, puis `npm run serve` et ouvrir `/gyms/#ui` ou `/gyms/#iso`.
 
 ## Ancien prototype — conservé pour historique
 
